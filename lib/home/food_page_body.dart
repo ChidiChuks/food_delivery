@@ -193,22 +193,17 @@ class _FoodPageBodyState extends State<FoodPageBody> {
                       height: 20,
                     ),
                     Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
                         IconAndTextWidget(
                           icon: Icons.circle_sharp,
                           text: "Normal",
                           iconColor: AppColors.iconColor1,
                         ),
-                        SizedBox(
-                          width: 5,
-                        ),
                         IconAndTextWidget(
                           icon: Icons.location_on,
                           text: "1.7km",
                           iconColor: AppColors.mainColor,
-                        ),
-                        SizedBox(
-                          width: 5,
                         ),
                         IconAndTextWidget(
                           icon: Icons.access_time_rounded,
