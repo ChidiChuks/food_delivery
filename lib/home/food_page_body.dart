@@ -44,6 +44,7 @@ class _FoodPageBodyState extends State<FoodPageBody> {
   Widget build(BuildContext context) {
     return Column(
       children: [
+        // Slider section
         Container(
           // color: Colors.redAccent,
           height: Dimensions.pageView,
@@ -55,17 +56,23 @@ class _FoodPageBodyState extends State<FoodPageBody> {
             },
           ),
         ),
+        // Dots for slider section
         new DotsIndicator(
           dotsCount: 5,
           position: _currPageValue,
           decorator: DotsDecorator(
-            size: const Size.square(9.0),
-            activeSize: const Size(18.0, 9.0),
+            size: Size.square(Dimensions.squareSize9),
+            activeSize: Size(Dimensions.sizeWidth18, Dimensions.sizeHeight9),
             activeShape: RoundedRectangleBorder(
-              borderRadius: BorderRadius.circular(5.0),
+              borderRadius: BorderRadius.circular(Dimensions.radius5),
             ),
             activeColor: AppColors.mainColor,
           ),
+        ),
+
+        // Popular Text
+        SizedBox(
+          height: Dimensions.height30,
         ),
       ],
     );
@@ -108,7 +115,7 @@ class _FoodPageBodyState extends State<FoodPageBody> {
             ),
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(Dimensions.radius30),
-              color: index.isEven ? Color(0xFF69c5df) : Color(0xFF9294cc),
+              // color: index.isEven ? Color(0xFF69c5df) : Color(0xFF9294cc),
               image: DecorationImage(
                 fit: BoxFit.cover,
                 image: AssetImage(
@@ -171,7 +178,7 @@ class _FoodPageBodyState extends State<FoodPageBody> {
                             (index) => Icon(
                               Icons.star,
                               color: AppColors.mainColor,
-                              size: 15,
+                              size: Dimensions.iconSize15,
                             ),
                           ),
                         ),

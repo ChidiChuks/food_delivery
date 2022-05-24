@@ -44,7 +44,10 @@ class _MainFoodPageState extends State<MainFoodPage> {
                             text: "Lagos",
                             color: Colors.black54,
                           ),
-                          Icon(Icons.arrow_drop_down_rounded),
+                          Icon(
+                            Icons.arrow_drop_down_rounded,
+                            size: Dimensions.iconSize24,
+                          ),
                         ],
                       ),
                     ],
@@ -56,6 +59,7 @@ class _MainFoodPageState extends State<MainFoodPage> {
                       child: Icon(
                         Icons.search,
                         color: Colors.white,
+                        size: Dimensions.iconSize24,
                       ),
                       decoration: BoxDecoration(
                         borderRadius:

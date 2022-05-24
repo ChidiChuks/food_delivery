@@ -22,6 +22,7 @@ class Dimensions {
   static double font12 = screenHeight / 70.33;
 
   // declaring border radius variables for screenHeight
+  static double radius5 = screenHeight / 168.8;
   static double radius15 = screenHeight / 56.27;
   static double radius20 = screenHeight / 42.2;
   static double radius30 = screenHeight / 28.13;
@@ -32,4 +33,13 @@ class Dimensions {
   static double width15 = screenWidth / 26.0;
   static double width20 = screenWidth / 19.5;
   static double width30 = screenWidth / 13.0;
+
+  // Icon Size
+  static double iconSize24 = screenHeight / 35.17;
+  static double iconSize15 = screenHeight / 56.27;
+
+  // dots indicator
+  static double squareSize9 = screenHeight / 93.78;
+  static double sizeWidth18 = screenWidth / 21.67;
+  static double sizeHeight9 = screenHeight / 93.78;
 }
