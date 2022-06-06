@@ -74,6 +74,36 @@ class _FoodPageBodyState extends State<FoodPageBody> {
         SizedBox(
           height: Dimensions.height30,
         ),
+
+        Container(
+          margin: EdgeInsets.only(
+            left: Dimensions.width30,
+          ),
+          child: Row(
+            children: [
+              BigText(
+                text: "Popular",
+              ),
+              SizedBox(
+                width: Dimensions.width10,
+              ),
+              Container(
+                child: BigText(
+                  text: ".",
+                  color: Colors.black26,
+                ),
+              ),
+              SizedBox(
+                width: Dimensions.width10,
+              ),
+              Container(
+                child: SmallText(
+                  text: "Food pairing",
+                ),
+              ),
+            ],
+          ),
+        ),
       ],
     );
   }
