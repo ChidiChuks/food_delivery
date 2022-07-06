@@ -113,6 +113,10 @@ class _FoodPageBodyState extends State<FoodPageBody> {
         ),
 
         // List of food and images
+        SizedBox(
+          height: Dimensions.height30,
+        ),
+
         Container(
           height: 700,
           child: ListView.builder(
@@ -124,9 +128,11 @@ class _FoodPageBodyState extends State<FoodPageBody> {
                   margin: EdgeInsets.only(
                     left: Dimensions.width20,
                     right: Dimensions.width20,
+                    bottom: Dimensions.height10,
                   ),
                   child: Row(
                     children: [
+                      // Image Section
                       Container(
                         width: 120,
                         height: 120,
@@ -135,12 +141,14 @@ class _FoodPageBodyState extends State<FoodPageBody> {
                               BorderRadius.circular(Dimensions.radius20),
                           color: Colors.white38,
                           image: DecorationImage(
+                            fit: BoxFit.cover,
                             image: AssetImage(
                               "assets/image/food0.png",
                             ),
                           ),
                         ),
                       ),
+                      // Text Container
                     ],
                   ),
                 );
