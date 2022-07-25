@@ -42,4 +42,8 @@ class Dimensions {
   static double squareSize9 = screenHeight / 93.78;
   static double sizeWidth18 = screenWidth / 21.67;
   static double sizeHeight9 = screenHeight / 93.78;
+
+  // List View Size
+  static double listViewImgSize = screenWidth / 3.25;
+  static double listViewTextContSize = screenWidth / 3.9;
 }
