@@ -6,7 +6,6 @@ import 'package:food_delivery/widgets/icon_and_text_widget.dart';
 import 'package:food_delivery/widgets/small_text.dart';
 
 import '../../utils/dimensions.dart';
-// import '../utils/dimensions.dart';
 
 class FoodPageBody extends StatefulWidget {
   const FoodPageBody({Key? key}) : super(key: key);
